@@ -11,6 +11,15 @@ $(document).ready(function() {
 		location.hash = $(this).next().attr('id');
 	});
 	
+	$('a.all').live('click', function() {
+		$('.faq').show(1200);
+	});
+	
+	$('a.tag').live('click', function() {
+		$('.faq').hide();
+		$('.' + $(this).attr("rel")).show('slow');
+	});
+	
 	/**
 	 * Catch location.hash changes and show/hide according to what is selected
 	 */
