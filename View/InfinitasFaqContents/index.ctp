@@ -59,4 +59,14 @@
 		throw new Exception('Template was not loaded, make sure one exists');
 	}
 	
+	
+	$faqTags = ClassRegistry::init('Contents.GlobalTagged')->find(
+		'cloud',
+		array(
+			'limit' => 50,
+			'model' => $this->plugin . '.InfinitasFaqContent'
+		)
+	);
+	$this->set('faqTags', $faqTags);
+	
 	echo $this->GlobalContents->renderTemplate($globalLayoutTemplate);
