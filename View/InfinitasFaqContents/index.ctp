@@ -20,13 +20,13 @@
     foreach($infinitasFaqContents as $k => &$infinitasFaqContent) {
 		$eventData = $this->Event->trigger('infinitasFaqBeforeContentRender', array('_this' => $this, 'data' => $infinitasFaqContent));
 		$infinitasFaqContent['InfinitasFaqContent']['events_before'] = '';
-		foreach((array)$eventData['infinitasFaqBeforeContentRender'] as $_plugin => $_data){
+		foreach((array)$eventData['infinitasFaqBeforeContentRender'] as $_plugin => $_data) {
 			$infinitasFaqContent['InfinitasFaqContent']['events_before'] .= '<div class="'.$_plugin.'">'.$_data.'</div>';
 		}
 
 		$eventData = $this->Event->trigger('infinitasFaqAfterContentRender', array('_this' => $this, 'data' => $infinitasFaqContent));
 		$infinitasFaqContent['InfinitasFaqContent']['events_after'] = '';
-		foreach((array)$eventData['infinitasFaqAfterContentRender'] as $_plugin => $_data){
+		foreach((array)$eventData['infinitasFaqAfterContentRender'] as $_plugin => $_data) {
 			$infinitasFaqContent['InfinitasFaqContent']['events_after'] .= '<div class="'.$_plugin.'">'.$_data.'</div>';
 		}
 

@@ -22,7 +22,7 @@
 	 */
 	$eventData = $this->Event->trigger('blogBeforeContentRender', array('_this' => $this, 'post' => $post));
 	$post['BlogPost']['events_before'] = '';
-	foreach((array)$eventData['blogBeforeContentRender'] as $_plugin => $_data){
+	foreach((array)$eventData['blogBeforeContentRender'] as $_plugin => $_data) {
 		$post['BlogPost']['events_before'] .= '<div class="'.$_plugin.'">'.$_data.'</div>';
 	}
 
@@ -31,7 +31,7 @@
 	 */
 	$eventData = $this->Event->trigger('blogAfterContentRender', array('_this' => $this, 'post' => $post));
 	$post['BlogPost']['events_after'] = '';
-	foreach((array)$eventData['blogAfterContentRender'] as $_plugin => $_data){
+	foreach((array)$eventData['blogAfterContentRender'] as $_plugin => $_data) {
 		$post['BlogPost']['events_after'] .= '<div class="'.$_plugin.'">'.$_data.'</div>';
 	}
 

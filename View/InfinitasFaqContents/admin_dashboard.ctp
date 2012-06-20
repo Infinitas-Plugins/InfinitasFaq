@@ -99,8 +99,8 @@
 			<div class="view-all left">&nbsp;<?php echo $this->Html->link('(view all)', array('controller' => 'posts')); ?></div>
 			<ul class="feed clr">
 				<?php
-					if($blogFeeds){
-						foreach($blogFeeds as $feed){
+					if($blogFeeds) {
+						foreach($blogFeeds as $feed) {
 							if (!isset($iteration)) {
 								$iteration = 0;
 							}
