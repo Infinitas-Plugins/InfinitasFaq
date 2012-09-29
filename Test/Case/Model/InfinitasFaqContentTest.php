@@ -14,17 +14,17 @@ class InfinitasFaqContentTest extends CakeTestCase {
  */
 	public $fixtures = array(
 		'plugin.infinitas_faq.infinitas_faq_content',
-		'plugin.infinitas_faq.global_content',
-		'plugin.infinitas_faq.global_layout',
-		'plugin.infinitas_faq.theme',
-		'plugin.infinitas_faq.global_category',
-		'plugin.infinitas_faq.group',
-		'plugin.infinitas_faq.view_counter_view',
-		'plugin.infinitas_faq.user',
-		'plugin.infinitas_faq.global_tagged',
-		'plugin.infinitas_faq.global_tag',
-		'plugin.infinitas_faq.infinitas_comment',
-		'plugin.infinitas_faq.infinitas_comment_attribute'
+		'plugin.contents.global_content',
+		'plugin.contents.global_layout',
+		'plugin.contents.global_category',
+		'plugin.contents.global_tagged',
+		'plugin.contents.global_tag',
+		'plugin.themes.theme',
+		'plugin.users.group',
+		'plugin.users.user',
+		'plugin.view_counter.view_counter_view',
+		'plugin.comments.infinitas_comment',
+		'plugin.comments.infinitas_comment_attribute'
 	);
 
 /**

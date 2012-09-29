@@ -14,9 +14,9 @@ class InfinitasFaqContentsControllerTest extends ControllerTestCase {
  */
 	public $fixtures = array(
 		'plugin.infinitas_faq.infinitas_faq_content',
-		'plugin.infinitas_faq.infinitas_comment',
-		'plugin.infinitas_faq.infinitas_comment_attribute',
-		'plugin.infinitas_faq.view_counter_view'
+		'plugin.comments.infinitas_comment',
+		'plugin.comments.infinitas_comment_attribute',
+		'plugin.view_counter.view_counter_view'
 	);
 
 /**
