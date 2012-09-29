@@ -24,8 +24,7 @@ class InfinitasFaqContentTest extends CakeTestCase {
 		'plugin.infinitas_faq.global_tagged',
 		'plugin.infinitas_faq.global_tag',
 		'plugin.infinitas_faq.infinitas_comment',
-		'plugin.infinitas_faq.infinitas_comment_attribute',
-		'plugin.infinitas_faq.infinitas_comment_attributes'
+		'plugin.infinitas_faq.infinitas_comment_attribute'
 	);
 
 /**

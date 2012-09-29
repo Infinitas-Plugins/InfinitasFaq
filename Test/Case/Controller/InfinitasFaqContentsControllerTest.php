@@ -16,7 +16,6 @@ class InfinitasFaqContentsControllerTest extends ControllerTestCase {
 		'plugin.infinitas_faq.infinitas_faq_content',
 		'plugin.infinitas_faq.infinitas_comment',
 		'plugin.infinitas_faq.infinitas_comment_attribute',
-		'plugin.infinitas_faq.infinitas_comment_attributes',
 		'plugin.infinitas_faq.view_counter_view'
 	);
 
