@@ -48,4 +48,8 @@ class InfinitasFaqContentTest extends CakeTestCase {
 		parent::tearDown();
 	}
 
+	public function testSomething() {
+
+	}
+
 }
