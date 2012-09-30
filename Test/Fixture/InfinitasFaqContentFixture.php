@@ -15,7 +15,7 @@ class InfinitasFaqContentFixture extends CakeTestFixture {
 		'views' => array('type' => 'integer', 'null' => false, 'default' => '0', 'key' => 'index'),
 		'rating' => array('type' => 'float', 'null' => false, 'default' => '0'),
 		'rating_count' => array('type' => 'integer', 'null' => false, 'default' => '0'),
-		'ordering_id' => array('type' => 'integer', 'null' => false, 'default' => '1'),
+		'ordering_id' => array('type' => 'string', 'null' => false, 'length' => 36),
 		'ordering' => array('type' => 'integer', 'null' => false, 'default' => null),
 		'created' => array('type' => 'datetime', 'null' => true, 'default' => null),
 		'modified' => array('type' => 'datetime', 'null' => true, 'default' => null),
