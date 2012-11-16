@@ -1,6 +1,6 @@
 <?php
 	class InfinitasFaqEvents extends AppEvents {
-		public function onPluginRollCall() {
+		public function onPluginRollCall(Event $Event) {
 			return array(
 				'name' => 'FAQ',
 				'description' => 'FAQ plugin',
@@ -14,7 +14,7 @@
 			);
 		}
 
-		public function onAdminMenu($event) {
+		public function onAdminMenu(Event $Event) {
 			$menu['main'] = array(
 				'Dashboard' => array('plugin' => 'infinitas_faq', 'controller' => 'infinitas_faq_contents', 'action' => 'dashboard'),
 				'FAQ' => array('plugin' => 'infinitas_faq', 'controller' => 'infinitas_faq_contents', 'action' => 'index'),
@@ -22,14 +22,14 @@
 
 			return $menu;
 		}
-		
-		public function onRequireCssToLoad($event, $data = null) {
+
+		public function onRequireCssToLoad(Event $Event, $data = null) {
 			return array(
 				'InfinitasFaq.infinitas_faq'
 			);
 		}
-		
-		public function onRequireJavascriptToLoad($event, $data = null) {
+
+		public function onRequireJavascriptToLoad(Event $Event, $data = null) {
 			return array(
 				'InfinitasFaq.infinitas_faq'
 			);
