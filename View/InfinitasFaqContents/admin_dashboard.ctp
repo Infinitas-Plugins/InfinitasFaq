@@ -129,7 +129,7 @@
 												);
 											?>
 										</h4>
-										<div class="time quiet"><?php echo $this->Time->niceShort($feed['Feed']['created']); ?></div>
+										<div class="time quiet"><?php echo $this->Infinitas->date($feed['Feed']['created']); ?></div>
 										<div class="preview clr"><?php echo $this->Text->truncate($feed['Feed']['intro'], 150, array('exact' => false, 'html' => true)); ?></div>
 									</div>
 								</li>
