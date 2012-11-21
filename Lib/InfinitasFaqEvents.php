@@ -9,7 +9,7 @@
 				'dashboard' => array(
 					'plugin' => 'infinitas_faq',
 					'controller' => 'infinitas_faq_contents',
-					'action' => 'dashboard'
+					'action' => 'index'
 				)
 			);
 		}

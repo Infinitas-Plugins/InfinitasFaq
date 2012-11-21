@@ -34,17 +34,17 @@
 				'class' => 'first'
 			),
 			$this->Paginator->sort('title'),
-			$this->Paginator->sort('Category.name', __d('blog', 'Category')) => array(
-				'style' => 'width:130px;'
+			$this->Paginator->sort('Category.name', __d('infinitas_faq', 'Category')) => array(
+				'class' => 'large'
 			),
 			__('Tags'),
-			$this->Paginator->sort('comment_count', __d('blog', 'Comments')) => array(
-				'style' => 'width:50px;'
+			$this->Paginator->sort('comment_count', __d('infinitas_faq', 'Comments')) => array(
+				'class' => 'small'
 			),
 			$this->Paginator->sort('views') => array(
-				'style' => 'width:30px;'
+				'class' => 'small'
 			),
-			__d('blog', 'Status') => array(
+			__d('infinitas_faq', 'Status') => array(
 				'class' => 'actions'
 			)
 		));
@@ -56,22 +56,19 @@
 					<?php
 						echo $this->Html->link($infinitasFaqContent['InfinitasFaqContent']['title'], array('action' => 'edit', $infinitasFaqContent['InfinitasFaqContent']['id']));
 						echo $this->Html->adminPreview($infinitasFaqContent['InfinitasFaqContent']);
-					?>
+					?>&nbsp;
 				</td>
 				<td>
 					<?php
-						if(isset($infinitasFaqContent['GlobalCategory']['title'])) {
-							echo $this->Html->link(
-								$infinitasFaqContent['GlobalCategory']['title'],
-								array(
-									'plugin' => 'contents',
-									'controller' => 'global_categories',
-									'action' => 'edit',
-									$infinitasFaqContent['GlobalCategory']['id']
-								)
-							);
+						if(!empty($infinitasFaqContent['GlobalCategory']['title'])) {
+							echo $this->Html->link($infinitasFaqContent['GlobalCategory']['title'], array(
+								'plugin' => 'contents',
+								'controller' => 'global_categories',
+								'action' => 'edit',
+								$infinitasFaqContent['GlobalCategory']['id']
+							));
 						}
-					?>
+					?>&nbsp;
 				</td>
 				<td><?php echo $this->TagCloud->tagList($infinitasFaqContent); ?>&nbsp;</td>
 				<td><?php echo $infinitasFaqContent['InfinitasFaqContent']['comment_count']; ?>&nbsp;</td>
