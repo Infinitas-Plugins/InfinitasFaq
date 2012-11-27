@@ -71,8 +71,8 @@
 					?>&nbsp;
 				</td>
 				<td><?php echo $this->TagCloud->tagList($infinitasFaqContent); ?>&nbsp;</td>
-				<td><?php echo $infinitasFaqContent['InfinitasFaqContent']['comment_count']; ?>&nbsp;</td>
-				<td><?php echo $infinitasFaqContent['InfinitasFaqContent']['views']; ?>&nbsp;</td>
+				<td><?php echo $this->Design->count($infinitasFaqContent['InfinitasFaqContent']['comment_count']); ?>&nbsp;</td>
+				<td><?php echo $this->Design->count($infinitasFaqContent['InfinitasFaqContent']['views']); ?>&nbsp;</td>
 				<td>
 					<?php
 						echo $this->Infinitas->status($infinitasFaqContent['InfinitasFaqContent']['active'], $infinitasFaqContent['InfinitasFaqContent']['id']),
